@@ -13,3 +13,4 @@ services:
       - ./config/named.conf.options:/etc/bind/named.conf.options
       - ./config/named.conf.local:/etc/bind/named.conf.local
       - ./zones:/etc/bind/zones
+      - ./app:/app
