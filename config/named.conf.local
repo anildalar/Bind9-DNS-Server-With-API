@@ -1,0 +1,4 @@
+zone "oceanpbx.club" {
+    type master;
+    file "/etc/bind/zones/db.oceanpbx.club";
+};

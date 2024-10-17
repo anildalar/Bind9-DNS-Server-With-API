@@ -1,0 +1,33 @@
+$TTL    604800
+@       IN      SOA     ns1.oceanpbx.club. admin.oceanpbx.club. (
+                            2023101702 ; Serial (increment each time you update)
+                       604800         ; Refresh
+                        86400         ; Retry
+                      2419200         ; Expire
+                       604800 )       ; Negative Cache TTL
+
+; Define the nameservers
+@       IN      NS      ns1.oceanpbx.club.
+@       IN      NS      ns2.oceanpbx.club.
+@       IN      NS      ns3.oceanpbx.club.
+@       IN      NS      ns4.oceanpbx.club.
+@       IN      NS      ns5.oceanpbx.club.
+
+; Define A records for each nameserver (if needed)
+ns1     IN      A       176.57.188.56
+ns2     IN      A       176.57.188.56
+ns3     IN      A       176.57.188.56
+ns4     IN      A       176.57.188.56
+ns5     IN      A       176.57.188.56
+
+; A records for domain and subdomains
+@       IN      A       38.242.245.38  ; A record for the root domain
+db      IN      A       176.57.188.56  ; A record for db.oceanpbx.club
+files   IN      A       31.220.78.8    ; A record for files.oceanpbx.club
+jenkins IN      A       176.57.188.56  ; A record for jenkins.oceanpbx.club
+monitor IN      A       185.203.217.199; A record for monitor.oceanpbx.club
+monitor-db IN   A       185.203.217.199; A record for monitor-db.oceanpbx.club
+pbx     IN      A       161.97.154.199 ; A record for pbx.oceanpbx.club
+pbx7    IN      A       31.220.78.8    ; A record for pbx7.oceanpbx.club
+whatsApp IN     A       176.57.188.56  ; A record for whatsApp.oceanpbx.club
+www     IN      A       38.242.245.38  ; A record for www.oceanpbx.club
