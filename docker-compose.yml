@@ -8,9 +8,7 @@ services:
       - "30053:53"
       - "30053:53/udp"
       - "953:953/tcp"
-      - "5000:5000"  # Expose the Node.js API port
+      - "3000:3000"  # Expose the Node.js API port
     volumes:
-      - ./config/named.conf.options:/etc/bind/named.conf.options
-      - ./config/named.conf.local:/etc/bind/named.conf.local
-      - ./zones:/etc/bind/zones
+      - ./bind:/etc/bind
       - ./app:/app

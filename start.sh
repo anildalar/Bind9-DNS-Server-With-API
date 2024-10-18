@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Start Node.js app using PM2
-pm2 start /app/server.js
+# Start the Next.js application with PM2 in watch mode
+pm2 start npm --name "nextjs-app" -- start --watch
 
 # Wait for PM2 to initialize the app (optional, depending on app startup time)
 # sleep 5
